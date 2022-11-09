@@ -1,0 +1,128 @@
+/* Wiley CSS Code and Knowledge Test */
+
+/*Importing Open Sans from CDN */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+/* Tags*/
+
+b {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #333;
+}
+
+li {
+	background: white;
+}
+
+th {
+	color: #333333;
+	font-size: 14px;
+}
+
+/* Applying it To Global */
+
+.Skin {
+    font-family: 'Open Sans';
+    line-height: 20px;
+}
+
+/* Logo Container */
+
+.Skin #LogoContainer {
+	display: block;
+}
+
+div#LogoContainer div#Logo {
+	background-image: url('https://www.wiley.com/content/dam/wiley-dotcom/en/b2c/images/company-logo/wiley-logo-black.svg');
+	background-repeat: no-repeat;
+	height: 33px;
+	display: block;
+	padding: 0 0 3em 0;
+
+}
+
+/* Fixing Dropdown - Because Best Practices Remove Contrast Killing Background Make Bigger also Fitt's Law etc*/
+
+.Skin .TE textarea,.Skin input.TextEntryBox,.Skin input[type=password],.Skin input[type=search],.Skin input[type=text],.Skin select,.Skin textarea {
+	background-color:rgba(255,255,255,1);
+	border:2px solid #d2d2d6;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-ms-border-radius:4px;-o-border-radius:2px;
+	border-radius:4px;
+	padding:2px;
+	height: 3em;
+}
+
+/* Lining Up Stacked Labels Correctly - Best Practice in Forms is to reserve indents for Nested Items */
+.Skin .MC .QuestionBody {
+	padding-left:0px!important;
+	padding-right:20px!important;
+
+}
+
+.Skin .MC .DL .QuestionBody {
+	padding-left:0px!important;
+	padding-right:20px!important;
+
+}
+div.InnerInner .BorderColor div.QuestionBody select#QR\~QID6.ChoiceStructure.QR-QID6.QWatch {
+	padding-left:0px!important;
+	padding-right:20px!important;
+
+}
+
+/* Button Update*/
+.Skin #Buttons #NextButton, .Skin #Buttons #PreviousButton {
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    padding: 8px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-appearance: none;
+    transition: background .3s !important;
+    background-color: #115c36 !important;
+}
+
+/* Fix Single Radio Buttons */
+
+.Skin label.MultipleAnswer,.Skin label.MultipleAnswer.q-focused,.Skin label.SingleAnswer {
+
+	background:rgba(255,255,255,1) !important;
+}
+
+/*Adding More Hover States Cause Nice */
+.Skin label.MultipleAnswer,.Skin label.MultipleAnswer.q-focused,.Skin label.SingleAnswer:hover {
+	background:#f4f4f4 !important;
+}
+
+/* Radios */
+.Skin label.q-radio.q-checked, .Skin label.q-radio.q-checked.q-focused
+{
+	border: 2px solid #115c36 !important;
+    background: #115c36 !important;
+}
+
+.Skin label.q-radio {
+	border: 3px solid #333 !important;}
+
+	/* Quick Attempt at Cleaning Up Checkboxes too before toddlers brought 'Da Mayhem' */
+
+.Skin label.MultipleAnswer.q-checked>span::before {
+	background: #115c36 url(/jfe/themes/base-templates/qualtrics/base/version-1658262440254-05dae3/files/check.svg) no-repeat center center !important;
+}
+
+.Skin label.q-checkbox.q-checked, .Skin label.q-checkbox.q-checked.q-focused {
+		background: #115c36 url('/jfe/themes/base-templates/qualtrics/base/version-1658262440254-05dae3/files/check.svg') no-repeat center center !important;
+}
